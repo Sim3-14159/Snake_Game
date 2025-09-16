@@ -21,7 +21,7 @@ This is the schematic:
 ### Hardware
 
 - An *Arduino UNO* compatible microcontroller board or any microcontroller with 6+ digital ports and I2C compatibility
-- A 128×64 I2C single-color OLED display
+- A 128×64 I2C single-color OLED display (SH1106 or SSD1306)
 - Passive buzzer
 
 Everything else is shown in the [schematic](images/schematic.svg) and can be a generic type.
@@ -30,3 +30,4 @@ Everything else is shown in the [schematic](images/schematic.svg) and can be a g
 
 - If you use a microcontroller with ≤2kB of RAM, it will likely crash or maybe not even compile.
 - If you are using another microcontroller besides an *Arduino UNO*, make sure you connect **SCK** and **SDA** to its **SCL** and **SDA** pins, which may or may not be on **A5** and **A4**.
+- If you are using a _ instead of a _ screen, change the constructor from either `_` or `_` to `U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);` or `U8G2_SSD1306_128X64_NONAME_1_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);`, respectively.

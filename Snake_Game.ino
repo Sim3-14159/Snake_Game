@@ -3,10 +3,9 @@
 #include <EEPROM.h>
 
 // Initialize the display
-U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(
-  U8G2_R0,
-  /* reset=*/ U8X8_PIN_NONE
-);
+U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE); // uncomment for high quality
+//U8G2_SH1106_128X64_NONAME_1_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE); // uncomment for less RAM usage
+
 
 #define uButton 2
 #define dButton 3

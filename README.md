@@ -1,12 +1,11 @@
 # Snake_Game
 #### This repository contains the code for my fast-paced Arduino-run _Snake_ as well as the circuit for it. 
-
 #### You can find the main file in [`Snake_Game.ino`](Snake_Game.ino)
+<br>
 
 This is the schematic:
 ![Unable to load image](images/schematic.svg)
 
----
 
 ## Dependencies
 

@@ -30,4 +30,4 @@ Everything else is shown in the [schematic](images/schematic.svg) and can be a g
 
 - If you use a microcontroller with ≤2kB of RAM, it will likely crash or maybe not even compile.
 - If you are using another microcontroller besides an *Arduino UNO*, make sure you connect **SCK** and **SDA** to its **SCL** and **SDA** pins, which may or may not be on **A5** and **A4**.
-- If you are using a _ instead of a _ screen, change the constructor from either `_` or `_` to `U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);` or `U8G2_SSD1306_128X64_NONAME_1_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);`, respectively.
+- If you are using a _ instead of a _ screen, change the constructor from either `U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);` or `U8G2_SH1106_128X64_NONAME_1q_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);` to `U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);` or `U8G2_SSD1306_128X64_NONAME_1_HW_I2C u8g2(U8G2_R0, U8X8_PIN_NONE);`, respectively.

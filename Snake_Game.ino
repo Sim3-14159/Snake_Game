@@ -10,7 +10,7 @@ U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE); // 
 #define uButton 2
 #define dButton 3
 #define lButton 4
-#define rButton 5
+#define rButton 5 
 #define R_LED 7
 #define G_LED 6
 #define BUZZER A3
